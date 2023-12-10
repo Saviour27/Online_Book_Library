@@ -1,0 +1,48 @@
+﻿@model Books
+@{
+    ViewData["Title"] = "Book Detail";
+}
+
+<div class=" row text">
+    <div class="col-md-8 offset-1">
+        <div class="col-md-12 col-xs-6 border-primary m-2 ">
+            <p>
+                <h3>
+                    Details for @Model.Title
+                </h3>
+            </p>
+            <div class="card mb-6" style="max-width: 800px;">
+                <div class="row g-0">
+                <div class="col-md-3">
+                     <img src="~/@Model.ImageURL" width="100%" alt="@Model.Title">
+                </div>
+                <div class="col-md-9">
+                        <div class="card-body">
+                            <p class="card-text"><b>Title: </b>@Model.Title</p>
+                            <p class="card-text"><b>Author: </b>@Model.Author</p>
+                            <p class="card-text"><b>GenreId: </b>@Model.GenreId</p>
+                            <p class="card-text"><b>Publisher: </b>@Model.Publisher</p>
+                            <p class="card-text"><b>Language: </b>@Model.Language</p>
+                            <p class="card-text"><b>ISBN: </b>@Model.ISBN</p>
+                            <p class="card-text"><b>Pages: </b>@Model.Pages</p>
+                            <p class="card-text"><b>Library AddDate: </b>@Model.LibraryAddDate</p>
+                            <p class="card-text"><b>Copies In Library: </b>@Model.CopiesInLibrary</p>
+                            <p class="card-text"><b>Copies Out Library: </b>@Model.CopiesOutLibrary</p>
+                            <p class="card-text"><b>Available Copies: </b>@Model.AvailableCopies</p>
+                            <p class="card-text"><b>Book Categories: </b>@Model.bookcategories</p>
+                            <p class="card-text"><b>Book Description: </b>@Model.Description</p>
+                            <p class="card-text"><b>EVersion: </b>@Model.EVersion</p>
+                            <div class="card-text"><b>Rating</b>
+                                <span class="cursor-pointer text-black">&#9733;</span>
+                                <span class="cursor-pointer text-black">&#9733;</span>
+                                <span class="cursor-pointer text-black">&#9733;</span>
+                                <span class="cursor-pointer text-black">&#9733;</span>
+                                <span class="cursor-pointer text-black">&#9733;</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

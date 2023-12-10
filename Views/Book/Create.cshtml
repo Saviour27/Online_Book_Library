@@ -1,0 +1,100 @@
+﻿@model Books
+@{
+    ViewData["Title"] = "Add a new Book";
+}
+
+<div class=" row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>
+                Add a new Book
+            </h1>
+        </p>
+        <div class ="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action ="Create">
+                    <div asp-validation-summary = "ModelOnly" class=" text-danger"></div>
+                    <div class=" form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-conrol" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-conrol" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Author" class="control-label"></label>
+                        <input asp-for="Author" class="form-conrol" />
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="GenreId" class="control-label"></label>
+                        <input asp-for="GenreId" class="form-conrol" />
+                        <span asp-validation-for="GenreId" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Publisher" class="control-label"></label>
+                        <input asp-for="Publisher" class="form-conrol" />
+                        <span asp-validation-for="Publisher" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Language" class="control-label"></label>
+                        <input asp-for="Language" class="form-conrol" />
+                        <span asp-validation-for="Language" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="ISBN" class="control-label"></label>
+                        <input asp-for="ISBN" class="form-conrol" />
+                        <span asp-validation-for="ISBN" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="Pages" class="control-label"></label>
+                        <input asp-for="Pages" class="form-conrol" />
+                        <span asp-validation-for="Pages" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="LibraryAddDate" class="control-label"></label>
+                        <input asp-for="LibraryAddDate" class="form-conrol" />
+                        <span asp-validation-for="LibraryAddDate" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="CopiesInLibrary" class="control-label"></label>
+                        <input asp-for="CopiesInLibrary" class="form-conrol" />
+                        <span asp-validation-for="CopiesInLibrary" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="CopiesOutLibrary" class="control-label"></label>
+                        <input asp-for="CopiesOutLibrary" class="form-conrol" />
+                        <span asp-validation-for="CopiesOutLibrary" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="AvailableCopies" class="control-label"></label>
+                        <input asp-for="AvailableCopies" class="form-conrol" />
+                        <span asp-validation-for="AvailableCopies" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="EVersion" class="control-label"></label>
+                        <input asp-for="EVersion" class="form-conrol" />
+                        <span asp-validation-for="EVersion" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="bookcategories" class="control-label"></label>
+                        <input asp-for="bookcategories" class="form-conrol" />
+                        <span asp-validation-for="bookcategories" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <label asp-for="ImageURL" class="control-label"></label>
+                        <input asp-for="ImageURL" class="form-conrol" />
+                        <span asp-validation-for="ImageURL" class="text-danger"></span>
+                    </div>
+                    <div class=" form-group">
+                        <input type="submit" value="Create" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-controller="Book" asp-action="Index">Show All</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
